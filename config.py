@@ -1,1 +1,5 @@
-DATABASE_URL = "postgresql://lab_5_db_user:S1rKKmzxCDsWypc1ZrD1guHK3ram4tZM@dpg-d48en8mmcj7s73dubv70-a.oregon-postgres.render.com/lab_5_db"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+DATABASE_URL = os.environ.get("BASE_URL")
